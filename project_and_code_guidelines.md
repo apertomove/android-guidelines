@@ -2,7 +2,17 @@
 
 ## 1.1 Project structure
 
-New projects should follow the Android Gradle project structure that is defined on the [Android Gradle plugin user guide](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure). The [ribot Boilerplate](https://github.com/ribot/android-boilerplate) project is a good reference to start from.
+New projects should follow the Android Gradle project structure that is defined on the [Android Gradle plugin user guide](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure). 
+
+### 1.1.1  Package naming
+Classes are sorted into appropriate packages to enable quickly retrieval.
+
+* com.aperto.android.*.activities
+* com.aperto.android.*.fragments
+* com.aperto.android.*.adapters
+* com.aperto.android.*.models
+* com.aperto.android.*.helpers
+* com.aperto.android.*.ui
 
 ## 1.2 File naming
 
