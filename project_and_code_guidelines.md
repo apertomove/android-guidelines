@@ -293,7 +293,7 @@ As a general rule, we use the class name as tag and we define it as a `static fi
 
 ```java
 public class MyClass {
-    private static final String TAG = MyClass.class.getSimpleName();
+    private static final String TAG = "MyClass";
 
     public myMethod() {
         Log.e(TAG, "My error message");
@@ -303,11 +303,19 @@ public class MyClass {
 
 VERBOSE and DEBUG logs __must__ be disabled on release builds. It is also recommended to disable INFORMATION, WARNING and ERROR logs but you may want to keep them enabled if you think they may be useful to identify issues on release builds. If you decide to leave them enabled, you have to make sure that they are not leaking private information such as email addresses, user ids, etc.
 
-To only show logs on debug builds:
+To only show logs on debug builds we add the following to our proguard-rules.pro file:
 
-```java
-if (BuildConfig.DEBUG) Log.d(TAG, "The value of x is " + x);
 ```
+-assumenosideeffects class android.util.Log {
+    public static *** v(...);
+    public static *** d(...);
+    public static *** i(...);
+    public static *** w(...);
+    public static *** e(...);
+}
+```
+
+Altra
 
 ### 2.2.10 Class member ordering
 
