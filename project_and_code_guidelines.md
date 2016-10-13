@@ -5,7 +5,7 @@
 New projects should follow the Android Gradle project structure that is defined on the [Android Gradle plugin user guide](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure). 
 
 ### 1.1.1  Package naming
-Classes are sorted into appropriate packages to enable quickly retrieval.
+Classes are sorted into appropriate packages to enable quick retrieval.
 
 * com.aperto.android.*.activities
 * com.aperto.android.*.fragments
