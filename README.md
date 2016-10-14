@@ -4,6 +4,10 @@ List of guidelines that we use at [Aperto Move](http://apertomove.de/) when deve
 
 * [Project and code style guidelines](project_and_code_guidelines.md)
 
+Like what you see, checkout our custom linting rules for developers. We currently have not implemented all the guidlines, but are working hard to do so.
+
+* [Custom linting rules](https://github.com/apertomove/linette)
+
 ### License
 
 ```
